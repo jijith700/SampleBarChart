@@ -4,7 +4,6 @@ import android.graphics.Color
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.LinearLayoutManager
-import butterknife.BindView
 import com.jijith.barchart.adapter.SimpleBarChartAdapter
 import com.jijith.barchart.model.ChartData
 import com.jijith.barchart.view.BarChartRecyclerView

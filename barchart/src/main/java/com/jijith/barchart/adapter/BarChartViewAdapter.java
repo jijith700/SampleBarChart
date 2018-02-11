@@ -73,6 +73,7 @@ public abstract class BarChartViewAdapter<VH extends RecyclerView.ViewHolder> ex
     protected enum AdapterAnimationType {
         AlphaIn,
         SlideInBottom,
+        SlideOutBottom,
         ScaleIn,
         SlideInLeft,
         SlideInRight,
@@ -97,7 +98,12 @@ public abstract class BarChartViewAdapter<VH extends RecyclerView.ViewHolder> ex
             return new Animator[]{
                     ObjectAnimator.ofFloat(view, "translationY", view.getMeasuredHeight(), 0)
             };
-        } else if (type == AdapterAnimationType.SlideInLeft) {
+        } else if (type == AdapterAnimationType.SlideOutBottom) {
+            return new Animator[]{
+                    ObjectAnimator.ofFloat(view, "translationY", 0, view.getMeasuredHeight())
+            };
+        }
+        else if (type == AdapterAnimationType.SlideInLeft) {
             return new Animator[]{
                     ObjectAnimator.ofFloat(view, "translationX", -view.getRootView().getWidth(), 0)
             };
