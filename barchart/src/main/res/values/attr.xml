@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="BarChart">
+        <attr name="bar_chart_progress" format="integer"/>
+        <attr name="bar_chart_max" format="integer"/>
+
+        <attr name="bar_chart_unfinished_color" format="color"/>
+        <attr name="bar_chart_finished_color" format="color"/>
+
+        <attr name="bar_chart_text_size" format="dimension"/>
+        <attr name="bar_chart_text_color" format="color"/>
+        <attr name="bar_chart_text" format="string"/>
+
+        <attr name="bar_chart_ytext_size" format="dimension"/>
+        <attr name="bar_chart_ytext_color" format="color"/>
+        <attr name="bar_chart_ytext" format="string"/>
+
+        <attr name="bar_chart_prefix_text" format="string"/>
+        <attr name="bar_chart_suffix_text" format="string"/>
+
+        <attr name="bar_chart_color" format="color"/>
+
+    </declare-styleable>
+
+
+    <declare-styleable name="BarChartRecyclerview">
+        <attr name="recyclerviewClipToPadding" format="boolean" />
+        <attr name="recyclerviewPadding" format="dimension" />
+        <attr name="recyclerviewPaddingTop" format="dimension" />
+        <attr name="recyclerviewPaddingBottom" format="dimension" />
+        <attr name="recyclerviewPaddingLeft" format="dimension" />
+        <attr name="recyclerviewPaddingRight" format="dimension" />
+        <attr name="recyclerviewEmptyView" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="timeline_style" >
+        <attr name="tls_marker" format="color|reference"/>
+        <attr name="tls_line" format="color|reference"/>
+        <attr name="tls_marker_size" format="dimension"/>
+        <attr name="tls_line_size" format="dimension"/>
+    </declare-styleable>
+
+</resources>
